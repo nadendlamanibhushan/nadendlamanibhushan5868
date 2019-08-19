@@ -1,21 +1,16 @@
-#include <stdio.h>
- 
+#include<stdio.h>
 int main()
 {
-  int n, sum = 0, c, value;
- 
-  printf("How many numbers you want to add?\n");
-  scanf("%d", &n);
- 
-  printf("Enter %d integers\n", n);
- 
-  for (c = 1; c <= n; c++)
-  {
-    scanf("%d", &value);
-    sum = sum + value;
-  }
- 
-  printf("Sum of the integers = %d\n", sum);
- 
-  return 0;
+    int num;
+    printf("Enter the number:-");
+    scanf("%d\n",&num);
+    if(num%3==0)
+    {
+        printf("%d is divisible by 3",num);
+    }
+    else
+    {
+        printf("%d is not divisible by 3",num);
+    }
+    return 0;
 }
